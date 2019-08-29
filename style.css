@@ -1,0 +1,66 @@
+h1 {
+    border: 10px solid lightgreen;
+    width: 1000px;
+    height:20px
+    padding: 800px;
+    border-radius: 30px;
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin: 3vw;
+    font-size: 3vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 3vw;
+    font-family: monospace;
+    align-content: right;
+}
+a:hover{
+    background-color: aqua
+}
+nav{ 
+    width: 300vw;
+    background-color: whitesmoke;
+}
+body{
+    margin: 0;
+}
+@media only screen and (max-width: 500px){
+    ul{
+        flex-direction: column;
+    }
+    li{
+        margin: 0;
+    }
+    a{
+        display: none;
+    }
+    button:{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px){
+    button{
+        display: none;
+        padding: 2vw
+        font-size: 3vh;
+        background-color: aqua;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+    body{
+        background-color: white;
+        font-family: Helvetica;
+    }
+}
