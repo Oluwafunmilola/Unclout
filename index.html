@@ -2,7 +2,7 @@
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Living Life Smartly</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -25,50 +25,110 @@
         </nav>
 </head>
 <body>
-    <p>
-            <div class="container" text-align="center">
-        <ul>
-            <li style="border: 5px; border-style:solid; border-radius:
-             5px; border-color: whitesmoke margin:100; width: 50px;">
-                  Sirlama  </li>
-            <li style="border: 5px; border-style:solid; border-radius:
-            5px; border-color: whitesmoke margin:100; width: 80px;">Toplam Puan</li>
-            <li style="border: 5px; border-style:solid; border-radius:
-            5px; border-color: whitesmoke margin:100; width: 200px;" >Tamamlanan Gorevier</li>
-            <li style="border: 5px; border-style:solid; border-radius:
-            5px; border-color: whitesmoke margin:100; width: 200px;" >Bekleyen Gorevier</li>
-            <li style="border: 5px; border-style:solid; border-radius:
-            5px; border-color: whitesmoke margin:100; width: 50px;" >Rozet</li>
-        </ul>
-    </p>
-    <p>
-            <div class="container" text-align="center">
-            <ul>
-                <li style="border: 5px; border-style:solid; border-radius:
-                 500px; border-color: whitesmoke margin:100; width: 50px;">
-                      12  </li>
-                <li style="border: 5px; border-style:solid; border-radius:
-                500px; border-color: whitesmoke margin:100; width: 80px;">140</li>
-                <li style="border: 5px; border-style:solid; border-radius:
-                500px; border-color: whitesmoke margin:100; width: 50px;" >%70</li>
-                <li style="border: 5px; border-style:solid; border-radius:
-                500px; border-color: whitesmoke margin:100; width: 50px;" >4</li>
-                <li style="border: 5px; border-style:solid; border-radius:
-                500px; border-color: whitesmoke margin:100; width: 100px;" >Uzman</li>
-            </ul>
-    </p>
-    <div class="container" text-align="right"></div>
-    <table>
-        <th>Tamamlanan Gorevler</th>
-        <tr>
-            <td>
-                <ul>
-                    <li>P-L-Y Madesisi Similasyanu Tamamlasna</li>
+            <div class="slideshow-container" style="width:100%">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569840363/home_tnbc_lg_jctdz3.jpg" style="width:100%">
+                    <div class="text">Giving Life</div>
+                </div>
 
-                </ul>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569840364/home-ovarian-pov_l2mspw.jpg" style="width:100%">
+                    <div class="text">Giving Hope</div>
+                </div>
 
-                </td>
-        </tr>
-    </table>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569840364/home-prostate-cancer_gw9dgk.jpg" style="width:100%">
+                    <div class="text">Restoring Humanity</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569840362/home-fellows-2019_ctva5f.jpg" style="width:100%">
+                    <div class="text">Restoring Faith</div>
+                </div>
+
+                <a class="prev" oneclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" oneclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+<script>
+    var slideIndex = 0
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000);
+    }
+</script>
+<div class="main">
+    
+    <h2>MSD.COM</h2>
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569852597/about_history_ukydj1.png" alt="Our History" style="width:100%">
+                <h3>Our History</h3>
+                <p>Our rich history of discovery and innovation began more than 125 years ago and continues today. Through the years, our researchers have helped to find new ways to treat and prevent illness in people and animals around the world. We've done great things in the past. Today, we're doing great things for the future.</p>
+        </div>
+    </div>
+    <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569852595/about_vacines_lblq8k.jpg" alt="Vaccines" style="width:100%">
+                    <h3>Our Inventions</h3>
+                    <p>We are determined to transform breakthrough science into novel therapeutic and vaccine options. Curiosity, inventiveness and a passion for excellence are what drive our people to discover what's possible.</p>
+            </div>
+        </div>
+        <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569840364/home-ovarian-pov_l2mspw.jpg" alt="Humanity" style="width:100%">
+                        <h3>Our Pride</h3>
+                        <p>Since 1891, our researchers have helped to find new ways to treat and prevent illness — from the discovery of vitamin B1, to the first measles vaccine, to cold remedies and antacids, to the first statins to treat high cholesterol. Our scientists have also helped develop many products to improve animal health, including vaccines and antibiotics. Today, as a premier research-intensive biopharmaceutical company, we’re focused on making important scientific advancements within hepatitis C, HIV, diabetes and immuno-oncology.</p>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569855585/on_future_c735yk.jpg" alt="Our Work" style="width:100%">
+                            <h3>Our Work</h3>
+                            <p>Our business focuses on innovation and scientific excellence to deliver vaccines, medicines, and animal health products that can help millions around the world.</p>
+                    </div>
+                </div>
+            <div class="content">
+                <img src="https://res.cloudinary.com/oluwafunmilola/image/upload/v1569855730/on_present_vcziqh.jpg" alt="The Present" style="width:100%">
+            <h3>Our Inspiration</h3>
+            <p>Meeting tomorrow’s health care challenges will require more of the same dedication that has made us a leader in the health care industry. This video was created to celebrate our 125th anniversary, highlights our past discoveries and our promises for the future.</p>
+            </div>
+        
+        </div>
+       <iframe width="500" height="350" src="https://www.youtube.com/watch?v=rMbDxpINEic">
 </body>
+<footer>
+    <hr>
+    <p>
+            Copyright © 2009-2019 Merck Sharp & Dohme Corp., 
+            a subsidiary of Merck & Co., Inc. Kenilworth, NJ, USA. All rights reserved.
+
+            This website is maintained by Merck Sharp & Dohme Corp., 
+            a subsidiary of Merck & Co., Inc., Kenilworth, NJ, USA.
+    </p>
+</footer>
 </html>
